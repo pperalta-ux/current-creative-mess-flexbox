@@ -140,6 +140,7 @@ body {
     /* set the display to flex and use the justify-content & align-items properties to center the text within the div*/
     justify-content: center;
     align-items: center;
+    display: flex;
     background-color: #ffffff;
     background:#45413e;
     color: #fff;
