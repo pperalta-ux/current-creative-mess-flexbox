@@ -127,8 +127,8 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
-    height: 100%;
-    width: 100%;
+    padding-bottom:10%;
+
 }
 
 .wrapper #content span {
@@ -151,7 +151,7 @@ body {
     border-radius: 10px;
     padding: 0px 30px;
     width: 600px;
-    height: 170px;
+
 }
 
 #content p span {
@@ -241,10 +241,32 @@ body {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+/*--------- TABLET ---------*/
+@media (min-width: 768px) and (max-width: 1024px) {
+.heading-wrapper {
+  padding-top: 10%;
 }
+.heading-wrapper h1 {
+  font-size: 3em;
+  border-top: #ffffff;
+  border-bottom: #ffffff;
+}
+.wrapper {
+  padding-top: 5%;
+   }
+   }
+/*------- DESKTOP ----------*/
+@media (min-width: 1200px) and (max-width: 1600px){
+
+.heading-wrapper{
+  padding-top: 10%;
+  border: none;
+  font-size: 2em;
+   }
+.wrapper {
+  padding-top: 8%;
+}
+   }
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
